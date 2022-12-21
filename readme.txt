@@ -34,3 +34,15 @@ be re-positioned to its original place.
 The reset button simply refreshes the page, as that accomplishes the same thing as having to put all the used elements back to their original states and whatnot. 
 The tiles in this program also contain many different custom attributes through the usage of datasets. Datasets allowed for me to be able to add additional helpful
 values to the tiles such as their index position and the letter they were holding. 
+Tiles are selected from an associative array (created by JMH modified by me) which contains different values for each letter in the game. To end the game
+each tile must either reach a count of 0, and all tiles are depleted.
+Additionally, tiles can only be dropped to the BOARD and to the RACK. Dropping tiles anywhere else will activate the revert attribute on the tile, which will
+display the tile swiftly return to the rack. Tiles can also only be placed next to one another. This is accomplished by constantly searching the board array to 
+see if there are any spaces in between letters. If there are spaces between letters, an error case is triggered and the tile is destroyed and re-created at the rack.
+
+
+Word validation: word validation is accomplished through a very simple method. First, an ajax get is called on the dictionary.txt file (this file is massive
+and contains thousands of words). By getting this file, each word is seperated by the newline character and is inserted into an array called words. After 
+each update is made to the word string (so when a tile is dropped or taken off the board) this dictionary is constantly being referenced in order to ensure that
+the submit button is only available if the word is valid. If the word is not valid, or the word is under 2 letters (1 letter would be too easy), the submit
+button is not available and the user must either restart or come up with a word with the current tiles. 
