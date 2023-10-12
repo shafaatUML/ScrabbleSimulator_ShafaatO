@@ -1,8 +1,8 @@
 Name: Shafaat Osmani
 Email: shafaat.osmani@gmail.com
 
-REPO LINK: https://github.com/shafaatUML/GUIHW5FINALSUBMISSION2022.git
-GITHUB PAGES LINK: (PLEASE USE THS LINK TO TEST OUT PROJECT): https://shafaatuml.github.io/GUIHW5FINALSUBMISSION2022/ 
+REPO LINK: https://github.com/shafaatUML/ScrabbleSimulator_ShafaatO
+GITHUB PAGES LINK: (PLEASE USE THS LINK TO TEST OUT PROJECT): https://shafaatuml.github.io/ScrabbleSimulator_ShafaatO/
 
 About this project: This program simulates a single-line scrabble game in which the user can drag and drop tiles onto the scrabble board in order to create
 words and earn points. 
