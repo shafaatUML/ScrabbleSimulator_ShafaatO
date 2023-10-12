@@ -80,7 +80,7 @@ let blanktileletter;            // helper variable
 var doubleScore = "false";      // if double score is required
 var isWord = "false";           // check if word
 var amount = 0;                 // amount of double score multipliers
-var jamaica = "false";          // true if word is valid false if not, submit only lights up when this is true
+var light_submit_button = "false";          // true if word is valid false if not, submit only lights up when this is true
 var origcount = 100;            // original tile distribution, game is won if total tile count has been brought down to less than a full hand or 0
 
 // Modified associative array, taken from Jesse M. Heines. Added letter value and 
@@ -257,13 +257,13 @@ $('li', $board).droppable({
             console.log(word_string);
             if (words.includes(word_string)) {
                 console.log("TRUEEEEE");
-                jamaica = "true";           // weird name for a variable but it gets the job done, just keeps track of if word is valid or not
+                light_submit_button = "true";           // weird name for a variable but it gets the job done, just keeps track of if word is valid or not
             } else {
                 console.log("FALSEEEEEE");
-                jamaica = "false";
+                light_submit_button = "false";
             }
         }
-        if (jamaica == "true" && tiles_on_board >= 2) {
+        if (light_submit_button == "true" && tiles_on_board >= 2) {
             document.getElementById('submit').style.visibility = "visible";
         }
 
@@ -322,7 +322,7 @@ $($rack).droppable({
         }
 
         if (tiles_on_board < 2) {
-            jamaica == "false";
+            light_submit_button == "false";
             // source: https://stackoverflow.com/questions/6242976/javascript-hide-show-element
             document.getElementById('submit').style.visibility = "hidden";
         }
@@ -504,7 +504,7 @@ $("#submit").click(function () {
     for (var i = 0; i < board_arr.length; i++) {
         board_arr[i] = ' ';
     }
-    jamaica == "false";
+    light_submit_button == "false";
     document.getElementById('submit').style.visibility = "hidden";
 
     if (origcount < 7) {
