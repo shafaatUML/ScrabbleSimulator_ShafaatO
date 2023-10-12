@@ -1,7 +1,5 @@
 /*  Author: Shafaat Osmani
-    Contact: Shafaat_Osmani@student.uml.edu
-    Date: 12/20/2022
-    GUI HW5 Scrabble Project
+    Contact: shafaat.osmani@gmail.com
 
     About this file: Main Javascript file which is responsible for the functionality
     of the scrabble game. Description of each section/function is described. 
