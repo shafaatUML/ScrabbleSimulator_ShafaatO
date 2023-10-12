@@ -1,5 +1,5 @@
 Name: Shafaat Osmani
-Email: Shafaat_Osmani@student.uml.edu
+Email: shafaat.osmani@gmail.com
 
 REPO LINK: https://github.com/shafaatUML/GUIHW5FINALSUBMISSION2022.git
 GITHUB PAGES LINK: (PLEASE USE THS LINK TO TEST OUT PROJECT): https://shafaatuml.github.io/GUIHW5FINALSUBMISSION2022/ 
